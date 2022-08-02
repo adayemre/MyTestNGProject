@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GMI-Smoke-Suite" verbose="1" >
+    <test name="Regression-Test"   >
+        <packages>
+            <package name="techproed.*" />
+        </packages>
+    </test>
+</suite>
+        <!--.* means All
+        This suite will run all Test cases
+        This is what regression test is-->

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="GMI-Smoke-Suite" verbose="1" >
+    <test name="Smoke-Test"   >
+        <packages>
+            <package name="techproed.tests.smoketest" />
+        </packages>
+    </test>
+</suite>
+<!--
+ name: name of the related tag. We can put any name.
+ verbose : the amount of info we see on the console. The bigger verbose, the more information
+ -->

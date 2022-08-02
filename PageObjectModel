@@ -1,0 +1,15 @@
+When user goes to registration page
+And enter all fields
+Then user should be able to register
+https://www.gmibank.com/account/register
+1. Create page objects in RegistrationPage under pages package
+ssn, firstName,lastname,...
+    @FindBy(id = "ssn")
+    public WebElement ssn;
+2. Create a Test class Day15_RegistrationTest in smoke test package
+a. Go to the application
+b. Type ssn number
+    i. Create RegistrationPage object to get access to that page objects
+    RegistrationPage registrationPage = new RegistrationPage();
+    ii. Then type the ssn
+    registrationPage.ssn.sendKeys("111111111");

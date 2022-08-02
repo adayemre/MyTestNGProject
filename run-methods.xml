@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="GMI-Smoke-Suite" verbose="1" >
+    <test name="run-methods">
+        <classes>
+            <class name="techproed.tests.Day12_Assertions">
+                <methods>
+                    <include name="hardAssert"></include>
+                </methods>
+            </class>
+            <class name="techproed.tests.Day12_TestNGAnnotations">
+                <methods>
+                    <include name="test3"></include>
+                </methods>
+            </class>
+            <class name="techproed.tests.excelautomation.Day15_LoginTest">
+                <methods>
+                    <include name="employeeLoginTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+        <!-- tag hierarchy:
+        suite > test > package > class > method
+        Run hardAssert method from Day12_Assertions
+        AND
+        Run test3 method from Day12_TestNGAnnotation
+        AND
+        RUN employeeLoginTest method from Day15_LoginTest
+        -->
